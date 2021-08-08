@@ -1,0 +1,53 @@
+git init: initialises a git repo
+git config <--list|-l>: lists git config
+git config --global user.name: returns username
+git config --global user.email: returns email
+git status: returns current status of all the files
+git add <--a|.|filename>: adds files to staging area
+git commit -m "Initial commit": commits the changes added to the staging area
+git log: returns a log of all the commits
+
+git clone <URL> [dirname]: clones a remote repo
+
+.gitignore: git ignore files and patterns listed in this file
+
+git diff [filename]: compares working directory with staging area
+git diff --staged [filename]: compares last commit with statging area
+
+git rm <filename>: removes a file and stages it
+git mv <filename>: moves a file and stages it
+git rm --cached <filename>: stops tracking filename
+
+git log -p: shows the actual changes also
+git log -p -n: shows last n logs
+git log --stat: show short summary of the commits
+other options:
+  - git log --since=2.days
+  - git log --pretty=<oneline|short|full>
+  - git -log --format <format>
+  - check git-log documentation
+git commit --amend: change the current commit message
+
+git restore --staged <filename>: unstages filename
+git checkout -- <filename>: unmodifies staged and non-commited filename
+git checkout -f: matches working directory with last commit
+
+git remote add origin <URL>: creates an instance of a remote repo
+git remote: returns the name of the url
+git remote -v: push/pull url    
+git push origin master: to push changes to github
+
+git config --global <alias.aliasname commandname>: to alias commandname with aliasname
+
+git checkout -b <branchname>: creates and switches to branchname
+git merge branchname: mergers current branch with branchname
+
+git branch: shows branch name
+git branch <branchname>: changes branch to branchname
+git branch -d <branchname>: to delete branch
+git branch -v: show summary
+git branch --merged: shows merged branched
+git push origin --delete <branchname>: to delete branch from remote
+git checkout <branchname>: changes to branchname
+
+
