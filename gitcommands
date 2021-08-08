@@ -36,6 +36,7 @@ git remote add origin <URL>: creates an instance of a remote repo
 git remote: returns the name of the url
 git remote -v: push/pull url    
 git push origin master: to push changes to github
+git pull origin master: to pull the changes into the local repo
 
 git config --global <alias.aliasname commandname>: to alias commandname with aliasname
 
